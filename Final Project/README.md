@@ -8,6 +8,8 @@ The dataset can be found [here](https://www.kaggle.com/datasets/arashnic/book-re
 
 [Link to project dashboard](https://www.canva.com/design/DAFBFgLzyAo/OMxdrLJ1__NteYFUeU9Fwg/view?utm_content=DA%5B%E2%80%A6%5Dm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
+*A note on the dataset: There seem to be outliers in the dataset. A few hundred values in the user_age column of the **users** relation seem to be innacurate, as they are either too young (0) or too old (244) to be plausible. However, the rest of the dataset seems to be ok and we think there are still insights to be made from the data. Given that the age column is the only one with issue, we decided to filter age-based queries to between the ages of 10 and 100, as we think these are plausible.*
+
 ### Cardinality
 
 **books** relation: 
@@ -71,8 +73,6 @@ We also checked the Harry Potter books to see how popular they were in various l
 We wanted to try and combine the number of ratings per book and the average rating for that book into an accurate weighted rating to see which books are most popular. After trying a few variations that did not seem entirely accurate, we found a link online that included a formula for top rated movies in the IMDb database ([Linked here](https://stats.stackexchange.com/questions/6418/rating-system-taking-account-of-number-of-votes)). Based on this formula, we created a formula for our books rating database, using 100 as the "minimum amount of ratings needed to qualify."
 
 # Project Insights
-
-*A note on the dataset: There seem to be outliers in the dataset. A few hundred values in the user_age column of the **users** relation seem to be innacurate, as they are either too young (0) or too old (244) to be plausible. However, the rest of the dataset seems to be ok and we think there are still insights to be made from the data. Given that the age column is the only one with issue, we decided to filter age-based queries to between the ages of 10 and 100, as we think these are plausible.*
 
 ### Book Title Length vs. Popularity
 

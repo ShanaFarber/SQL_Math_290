@@ -1,4 +1,3 @@
---changed the name
 with stats as(
 select
 	 count(u.user_age) as total_count --167,307

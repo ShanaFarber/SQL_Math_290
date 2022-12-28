@@ -29,7 +29,7 @@ where u.user_age is not null
 group by age_interval
 order by age_interval asc;
 
---which books have the highest number of ratings
+--which books have the highest number of ratings?
 select b.title,
 	count(r.rating) as cnt
 from books b

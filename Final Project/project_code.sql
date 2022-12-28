@@ -146,7 +146,7 @@ order by weighted_rating desc
 limit 10
 ;
 
---authors
+--highest rated authors
 with cte as (
 	select b.author,
 		avg(r.rating) as avg_rating,
