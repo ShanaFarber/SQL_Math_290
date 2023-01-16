@@ -1,8 +1,8 @@
 # Homework 2
 
-Download [2018 Taxi Fare Data](https://data.cityofnewyork.us/api/views/t29m-gskq/rows.csv?accessType=DOWNLOAD).
-- Source: [NYC Open Data](https://data.cityofnewyork.us/Transportation/2018-Yellow-Taxi-Trip-Data/t29m-gskq)
+Source and documentation: [NYC Open Data](https://data.cityofnewyork.us/Transportation/2018-Yellow-Taxi-Trip-Data/t29m-gskq) (export as CSV and use data dictionary PDF to define columns).
 
-`create_table.sql` uses the documentation from the NYC Open Data page to create a schema for the taxi data using the defined column names.
+### SQL Scripts
 
-`import_data.sql` uses COPY to import the data from the 2018 taxi csv into the **2018_Yellow_Taxi_Trip_Data** table. 
+1. `create_table.sql` uses the documentation from the NYC Open Data page to create a schema for the taxi data using the defined column names.
+2. `import_data.sql` uses COPY to import the data from the 2018 taxi csv into the **2018_Yellow_Taxi_Trip_Data** table. Taxi data CSV stored in "Temp" file so that Postgres server can access.
