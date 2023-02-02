@@ -1,6 +1,6 @@
 # Homework 4
 
-Screenshots with explanation of the results of my SQL code: https://docs.google.com/document/d/1-CIp64NsmzZhRB78KF-3Rxg5hqWgLJ7H4LSToG9jOyI/edit?usp=sharing
+`distinct_count.sql` creates 
 
 ### Exercise 1:
 

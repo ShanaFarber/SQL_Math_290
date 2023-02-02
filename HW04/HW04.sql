@@ -1,30 +1,8 @@
-/* Exercise 1 */
-
-/* distinct count in single select statement with wrong output format */
-select 
-        count (distinct "VendorID") as vendorID,
-        count (distinct "tpep_pickup_datetime") as tpep_pickup_datetime,
-        count (distinct "tpep_dropoff_datetime") as tpep_dropoff_datetime,
-        count (distinct "Passenger_count") as Passenger_count,
-        count (distinct "PULocationID") as PULocationID,
-        count (distinct "DOLocationID") as DOLocationID,
-        count (distinct "RateCodeID") as RateCodeID,
-        count (distinct "Store_and_fwd_flag") as Store_and_fwd_flag,
-        count (distinct "Payment_type") as Payment_type,
-        count (distinct "Fare_amount") as Fare_amount,
-        count (distinct "Extra") as Extra,
-        count (distinct "MTA_tax") as MTA_tax,
-        count (distinct "Improvement_surcharge") as Improvement_surcharge,
-        count (distinct "Tip_amount") as Tip_amount,
-        count (distinct "Tolls_amount") as Tolls_amount,
-        count (distinct "Total_amount") as Total_amount
-    from taxi_fares;
-
 /* 17 UNIONed selected statements which output the distinct count in the desired format */
 select 'VendorID' as column_name, count(*) as distinct_records
 	from(
 		select distinct "VendorID" 
-		from "taxi_fares" 
+		from "2018_Yellow_Taxi_Trip_Data" 
 	)as vndr
 union
 select 'tpep_pickup_datetime', count(*)
